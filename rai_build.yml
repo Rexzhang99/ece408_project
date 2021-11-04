@@ -20,8 +20,8 @@ commands:
       # - /bin/bash -c "time ./m1 1000"
       # - /bin/bash -c "gprof -Q m1 gmon.out"
       # - /bin/bash -c "./m2"
-      # - /bin/bash -c "time ./m2 100"
-      # - nsys profile --stats=true ./m2 100
-      - nv-nsight-cu-cli --section '.*' -o analysis_file ./m2 100
+      # - /bin/bash -c "time ./m2 10000"
+      - nsys profile --stats=true ./m2 10000
+      # - nv-nsight-cu-cli --section '.*' -o analysis_file ./m2 100
       # - /bin/bash -c "cuda-memcheck ./m2 100"
       #- /bin/bash -c "./m3"
